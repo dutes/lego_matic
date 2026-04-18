@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card" style="max-width: 800px; margin: 0 auto; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <div style="border-bottom: 1px solid #E2E8F0; padding-bottom: 1rem; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+        <h1 style="color: #4A5568; margin: 0; font-size: 1.8rem;">Parent Dashboard</h1>
+        <div class="badge" style="background: #E2E8F0; color: #4A5568;">Admin Config</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <section>
+            <h3 style="color: #2D3748; margin-bottom: 1rem;">Progress Summary</h3>
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div style="background: #F7FAFC; padding: 1.5rem; border-radius: 8px; border: 1px solid #E2E8F0;">
+                    <div style="font-size: 2rem; font-weight: bold; color: #3182CE;">{{ saved|length }}</div>
+                    <div style="color: #718096; font-size: 0.9rem;">Saved Missions</div>
+                </div>
+                <div style="background: #F7FAFC; padding: 1.5rem; border-radius: 8px; border: 1px solid #E2E8F0;">
+                    <div style="font-size: 2rem; font-weight: bold; color: #38A169;">{{ completed|length }}</div>
+                    <div style="color: #718096; font-size: 0.9rem;">Completed Builds</div>
+                </div>
+            </div>
+        </section>
+
+        <section style="border-top: 1px solid #E2E8F0; padding-top: 2rem;">
+            <h3 style="color: #2D3748; margin-bottom: 1rem;">Data Management</h3>
+            <p style="color: #718096; margin-bottom: 1.5rem;">Clear the challenge history if you want to reset the app for a new building session.</p>
+            
+            <button onclick="clearData()" style="background: #E53E3E; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.2s;">
+                Reset All Progress
+            </button>
+        </section>
+        
+        <section style="border-top: 1px solid #E2E8F0; padding-top: 2rem;">
+            <h3 style="color: #2D3748; margin-bottom: 1rem;">About V3 Update</h3>
+            <div style="background: #EBF8FF; padding: 1.5rem; border-radius: 8px; color: #2B6CB0;">
+                <p style="margin: 0;">This application has been upgraded to V3 with a premium child-friendly UI, smoother animations, and enhanced layout readability. Enjoy building!</p>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}

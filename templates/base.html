@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Builder Challenge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=3">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span style="font-size: 2.2rem;">🧱</span> Brick Builder <span style="color: var(--primary-red);">V3</span>
+            </a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/categories">Missions</a>
+                <a href="/saved">My Lab</a>
+                <a href="/parent" style="color: var(--text-muted); font-size: 0.9rem; align-self: center;">Parent Mode</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container animate-fade-in">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

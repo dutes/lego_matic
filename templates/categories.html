@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="page-header animate-fade-in">
+    <div class="hero-badge">Mission Selection</div>
+    <h1>Choose Your <span class="highlight-text">Mission Area</span></h1>
+    <p class="subtitle">Select a category to receive your next building assignment!</p>
+</div>
+
+<div class="category-grid animate-fade-in" style="animation-delay: 0.2s;">
+    {% for category in categories %}
+    <a href="/challenge/{{ category.id }}" class="category-card" style="--card-color: {{ category.color }}; --card-bg: {{ category.bg }};">
+        <div class="category-icon">
+            {{ category.icon }}
+        </div>
+        <h2>{{ category.name }}</h2>
+        <div class="card-action">Initialize &rarr;</div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

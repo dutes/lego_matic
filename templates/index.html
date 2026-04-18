@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="hero-text animate-fade-in">
+        <div class="hero-badge">Build • Create • Imagine</div>
+        <h1>Welcome to the <span class="highlight-text">Builder's Lab!</span></h1>
+        <h2>Ready for a new mission?</h2>
+    </div>
+    
+    <div class="mission-console animate-fade-in" style="animation-delay: 0.2s;">
+        <div class="console-header">
+            <div class="console-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <div class="console-title">MAIN CONSOLE</div>
+        </div>
+        <div class="console-body">
+            <div class="console-icon floating">🤖</div>
+            <p class="console-desc">The mission generator is fully charged and waiting for your command.</p>
+            <a href="/categories" class="btn btn-primary btn-large console-btn">
+                <span class="btn-icon">🚀</span> Start Building
+            </a>
+        </div>
+        <div class="console-footer">
+            <div class="status-bar">
+                <span class="status-indicator spinning">⚙️</span>
+                <span>System Online</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

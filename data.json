@@ -1,0 +1,95 @@
+{
+  "categories": [
+    {
+      "id": "space",
+      "name": "Deep Space",
+      "icon": "\ud83d\ude80",
+      "color": "#FFC107",
+      "bg": "#FFF8E1"
+    },
+    {
+      "id": "vehicles",
+      "name": "Super Vehicles",
+      "icon": "\ud83c\udfce\ufe0f",
+      "color": "#F44336",
+      "bg": "#FFEBEE"
+    },
+    {
+      "id": "fantasy",
+      "name": "Epic Fantasy",
+      "icon": "\ud83d\udc09",
+      "color": "#9C27B0",
+      "bg": "#F3E5F5"
+    },
+    {
+      "id": "town",
+      "name": "Bustling Town",
+      "icon": "\ud83c\udfe2",
+      "color": "#2196F3",
+      "bg": "#E3F2FD"
+    },
+    {
+      "id": "animals",
+      "name": "Wild Animals",
+      "icon": "\ud83e\udd95",
+      "color": "#4CAF50",
+      "bg": "#E8F5E9"
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c1",
+      "category": "space",
+      "title": "Moon Base Alpha",
+      "story": "Astronauts need a new safe haven on the moon!",
+      "task": "Build a moon base with a communication tower and a rover garage.",
+      "twist": "It must have at least one moving part!"
+    },
+    {
+      "id": "c2",
+      "category": "space",
+      "title": "Alien Starship",
+      "story": "A friendly alien race wants to trade, but they need a ship to arrive in.",
+      "task": "Build an asymmetrical starship with landing gear.",
+      "twist": "Use exactly 3 transparent pieces."
+    },
+    {
+      "id": "c3",
+      "category": "vehicles",
+      "title": "Monster Truck",
+      "story": "The arena is packed and ready for the ultimate jump!",
+      "task": "Build a monster truck with huge wheels and a spoiler.",
+      "twist": "It must be able to roll down a ramp without breaking."
+    },
+    {
+      "id": "c4",
+      "category": "fantasy",
+      "title": "Dragon's Lair",
+      "story": "A fearsome dragon hoards treasure in a mountain cave.",
+      "task": "Build a dragon and a cave entrance.",
+      "twist": "Include a hidden trap for knights."
+    },
+    {
+      "id": "c5",
+      "category": "town",
+      "title": "Pizza Parlour",
+      "story": "The citizens are hungry for the best slice in town.",
+      "task": "Build a pizza restaurant with an oven and an outdoor seating area.",
+      "twist": "Include a delivery scooter."
+    },
+    {
+      "id": "c6",
+      "category": "animals",
+      "title": "Jurassic Park",
+      "story": "A baby dinosaur has escaped its enclosure!",
+      "task": "Build a tall fence and a friendly dinosaur.",
+      "twist": "Give the dinosaur a bowl of water and some leaves."
+    }
+  ],
+  "user_progress": {
+    "saved_challenges": [
+      "c1"
+    ],
+    "completed_challenges": []
+  }
+}
