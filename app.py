@@ -1,11 +1,20 @@
+import os
 import json
 import random
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 
 app = Flask(__name__)
-DATA_FILE = 'data.json'
+DATA_FILE = os.environ.get('DATA_FILE', 'data.json')
 
 def load_data():
+    if not os.path.exists(DATA_FILE):
+        # Create a default if it doesn't exist (useful for clean Docker volume mounts)
+        from shutil import copyfile
+        if os.path.exists('default_data.json'):
+            copyfile('default_data.json', DATA_FILE)
+        else:
+            return {"categories": [], "challenges": [], "user_progress": {"saved_challenges": [], "completed_challenges": []}}
+            
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         return json.load(f)
 
@@ -103,4 +112,4 @@ def clear_data():
     return jsonify({"status": "cleared"})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0', port=5000)
