@@ -1,6 +1,6 @@
 # 🧱 Brick Builder Challenge V3
 
-Welcome to the Brick Builder Challenge V3! This is a completely upgraded, premium, and child-friendly responsive web application.
+A child-friendly web app for the moment a kid sits in front of a pile of bricks with no idea what to build. Pick a category, hit the randomiser, and get a build challenge. A Parent Mode keeps track of what's been saved and completed.
 
 ## 🚀 How to Run Locally
 
@@ -11,7 +11,7 @@ Welcome to the Brick Builder Challenge V3! This is a completely upgraded, premiu
 ### The Manual Way (Terminal/Command Prompt)
 If you prefer using the command line:
 
-1. **Open your terminal** and navigate to this folder (`e:\my_code\lego_matic`).
+1. **Open your terminal** and navigate to the project folder.
 2. **Install the required dependencies** (just Flask):
    ```bash
    pip install -r requirements.txt
